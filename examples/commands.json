@@ -1,0 +1,88 @@
+[
+    {
+        "_id": "5e0f55a56a5de5574cf144fb",
+        "name": "Power",
+        "template": "PWR_{state}",
+        "params": [
+            {
+                "name": "Einschalten",
+                "key": "state",
+                "value": "ON"
+            },
+            {
+                "name": "Ausschalten",
+                "key": "state",
+                "value": "OFF"
+            }
+        ]
+    },
+    {
+        "_id": "5e0f55b8e5882235e170bd20",
+        "name": "Volume",
+        "template": "MASTER_VOL_{vol}",
+        "params": [
+            {
+                "name": "Level",
+                "key": "vol",
+                "min": 0,
+                "max": 100
+            }
+        ]
+    },
+    {
+        "_id": "5e0f55c8cae32ebe8a8700a7",
+        "name": "Picture",
+        "template": "CHANEL_{region}-{id}",
+        "params": [
+            {
+                "name": "Region",
+                "key": "region",
+                "min": 1,
+                "max": 2
+            },
+            {
+                "name": "ID",
+                "key": "id",
+                "min": 1,
+                "max": 1000
+            }
+        ]
+    },
+    {
+        "_id": "5e0f55d6c073ddb0576e835d",
+        "name": "Power Toggle",
+        "template": "PWR_TOGGLE",
+        "params": []
+    },
+    {
+        "_id": "5e0f55e0538c97ad90f472d3",
+        "name": "Test",
+        "template": "{s1}-{s2}-{s3}-{s4}",
+        "params": [
+            {
+                "name": "S1 - #1",
+                "key": "s1",
+                "min": 1,
+                "max": 10
+            },
+            {
+                "name": "S2 - #1",
+                "key": "s2",
+                "min": 1,
+                "max": 10
+            },
+            {
+                "name": "S3 - #1",
+                "key": "s3",
+                "min": 1,
+                "max": 10
+            },
+            {
+                "name": "S4 - #1",
+                "key": "s4",
+                "min": 1,
+                "max": 10
+            }
+        ]
+    }
+]
